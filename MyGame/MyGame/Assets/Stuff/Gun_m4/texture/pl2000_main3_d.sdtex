@@ -1,7 +1,0 @@
-!Texture
-Id: 7e6220d5-40b0-40e1-914b-0fb7cbe1f40e
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../../Resources/Stuff/Gun_m4/texture/pl2000_main3_d.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

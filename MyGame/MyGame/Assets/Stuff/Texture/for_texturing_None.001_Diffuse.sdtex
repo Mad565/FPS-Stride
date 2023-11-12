@@ -1,7 +1,0 @@
-!Texture
-Id: a0f85515-7748-4f8f-88fa-83d1842f55f3
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../Resources/Stuff/Texture/for_texturing_None.001_Diffuse.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

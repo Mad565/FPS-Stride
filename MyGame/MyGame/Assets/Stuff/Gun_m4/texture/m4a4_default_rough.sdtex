@@ -1,7 +1,0 @@
-!Texture
-Id: f716a900-ab38-491e-96ea-3a34ada0ada7
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../../Resources/Stuff/Gun_m4/texture/m4a4_default_rough.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

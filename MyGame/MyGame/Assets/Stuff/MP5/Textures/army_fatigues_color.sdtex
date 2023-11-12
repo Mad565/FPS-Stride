@@ -1,7 +1,0 @@
-!Texture
-Id: e85a9b8a-a532-419d-9128-91e14cea0de4
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../../Resources/Stuff/Nothing/Textures/army_fatigues_color.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

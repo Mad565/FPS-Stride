@@ -1,7 +1,0 @@
-!Texture
-Id: ef02500d-418f-473f-8c11-b75ed9835d1f
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../../Resources/Stuff/Gun_m4/texture/soldierhand_n.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

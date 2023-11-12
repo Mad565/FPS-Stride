@@ -1,7 +1,0 @@
-!Texture
-Id: df86f4b7-d4bd-4e75-8ffb-e7b920014c2b
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../../Resources/Stuff/Gun_m4/texture/m4a4_default_color_psd_3b0b391e.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,7 +1,0 @@
-!Texture
-Id: 9c1afd48-451d-4591-a5a3-19a5a41c0a47
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../../Resources/Stuff/Nothing/Textures/material_metallicRoughness.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

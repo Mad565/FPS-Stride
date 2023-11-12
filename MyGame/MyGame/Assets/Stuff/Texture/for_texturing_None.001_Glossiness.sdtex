@@ -1,7 +1,0 @@
-!Texture
-Id: 7d88c3ac-2130-4633-9c9d-89197ec5de1e
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../Resources/Stuff/Texture/for_texturing_None.001_Glossiness.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

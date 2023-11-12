@@ -1,7 +1,0 @@
-!Texture
-Id: 5192c20e-f28e-4cb5-b5f6-8c5880372891
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../Resources/Decal/433-4331527_art-hole-bullethole-stickers-sunflower-removebg-preview (1).png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

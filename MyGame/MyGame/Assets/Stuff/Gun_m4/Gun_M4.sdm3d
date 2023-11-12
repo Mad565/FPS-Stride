@@ -1,0 +1,27 @@
+!Model
+Id: 6d52805f-c5fc-4067-9554-a6e44b412402
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Stuff/Gun_m4/Gun_reload.fbx
+Skeleton: b3bc6a70-2900-4238-b10f-0ebc61e54a6a:Stuff/Gun_m4/Gun_M4 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ad62cfccfe0d03daafd557ea44c3b4e6:
+        Name: DMC5_Soldier_Shirt_Mat
+        MaterialInstance:
+            Material: 7bd6a071-e90e-4912-a4f0-3ca795f45353:Stuff/Gun_m4/Material_
+    eb214e0600fc0a8f046a8d16bc1d6393:
+        Name: DMC5_Soldier_Hands_Mat
+        MaterialInstance:
+            Material: 547100f6-50a7-4173-9f46-ec6e30872b71:Stuff/Gun_m4/MAT_hands
+    9590248f8787ec398b9a675a9098fc8f:
+        Name: DMC5_Soldier_Gear_Mat
+        MaterialInstance:
+            Material: a7e5ee18-8d1c-4b5c-abc4-cafe3625c186:Stuff/Gun_m4/Material_shirt
+    2a0f03376d4d2969e9d63f047f8b8d13:
+        Name: weapon_rif_m4a4
+        MaterialInstance:
+            Material: 1689d514-fe0d-4c4b-9d1c-f859d9c6d528:Stuff/Gun_m4/Material_Gun
+Modifiers: {}
+~SourceHashes:
+    c7bfccff4c5cb380473fdacee8352b88~../../../Resources/Stuff/Gun_m4/Gun_reload.fbx: 45aae4b29f86609b55e9d506226338bf

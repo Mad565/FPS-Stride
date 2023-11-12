@@ -1,0 +1,19 @@
+!Animation
+Id: 1bdf2d10-6ea9-44eb-b2bc-ed36582038b7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Stuff/Nothing/Insurgency_Shadow_Final.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: 003c1e11-8de2-49f7-8539-d1c5ea37dff8:Stuff/MP5/Insurgency_Multirig_Shadow_Final Skeleton
+RootMotion: false
+PreviewModel: f3fb4477-e6d3-4ad7-bcd2-1de4a40013d0:Stuff/MP5/Insurgency_Multirig_Shadow_Final
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:00.2083299
+~SourceHashes:
+    d29bd089114978e6a8b8420845273e7a~../../../Resources/Stuff/Nothing/Insurgency_Shadow_Final.fbx: d81373cd7e37db90d042a1a80fac0e46

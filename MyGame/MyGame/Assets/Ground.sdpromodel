@@ -1,0 +1,12 @@
+!ProceduralModelAsset
+Id: ebff45b8-a799-42eb-a3a9-f4506b902b7b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: !CubeProceduralModel
+    Size: {X: 50.0, Y: 50.0, Z: 50.0}
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    NumberOfTextureCoordinates: 10
+    MaterialInstance:
+        Material: cf694e67-cf60-48d6-be1c-5da029082667:Ground Material

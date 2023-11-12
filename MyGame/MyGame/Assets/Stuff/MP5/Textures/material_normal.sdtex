@@ -1,0 +1,6 @@
+!Texture
+Id: c203cec6-f6e3-49b7-9fab-0e51b014d5cc
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Stuff/Nothing/Textures/material_normal.png
+Type: !NormalMapTextureType {}

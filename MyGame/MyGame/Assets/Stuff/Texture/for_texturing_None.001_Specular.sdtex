@@ -1,0 +1,7 @@
+!Texture
+Id: 4925921d-817a-431c-a9ed-a6dd5562df3a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Stuff/Texture/for_texturing_None.001_Specular.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,19 @@
+!Animation
+Id: 7b93c08f-9da0-496d-9340-fd650d4e22db
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Stuff/Gun_m4/Gun_reload.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: b3bc6a70-2900-4238-b10f-0ebc61e54a6a:Stuff/Gun_m4/Gun_M4 Skeleton
+RootMotion: false
+PreviewModel: 6d52805f-c5fc-4067-9554-a6e44b412402:Stuff/Gun_m4/Gun_M4
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:02.0833300
+~SourceHashes:
+    bf63d41e57049f7d11cb062d78e49969~../../../Resources/Stuff/Gun_m4/Gun_reload.fbx: 45aae4b29f86609b55e9d506226338bf

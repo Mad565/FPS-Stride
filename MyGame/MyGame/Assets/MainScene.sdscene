@@ -1,0 +1,634 @@
+!SceneAsset
+Id: aa99879a-dd1a-4482-b251-8869887dc536
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 0dab5d35-716c-4516-9855-e5c976c87cfe
+        - ref!! 61ee4737-f25d-450f-b640-14ca6f367640
+        - ref!! 3aa60f27-7469-4f96-bfef-a862151b720c
+        - ref!! 71bb9241-502a-4ba0-9d48-b53b200e7d4e
+    Parts:
+        -   Entity:
+                Id: 0dab5d35-716c-4516-9855-e5c976c87cfe
+                Name: Player
+                Components:
+                    05cca4ede6506cf59de0c9aabd59e34a: !TransformComponent
+                        Id: 25a2c0c4-72b3-4f42-b7b6-ff8b608a2a47
+                        Position: {X: -4.4200735, Y: 0.8457918, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            3f4454353a1911f3b670806181c7c060: ref!! 5e1adced-5ddc-4c03-9f9d-1eedd95532a4
+                    2b95631bd80839763b389a92a0acfb80: !CharacterComponent
+                        Id: bce504b4-2bbb-4bc7-8528-9d29ef8f3e10
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            6934350a79af8fd3272d247139e0462e: !CapsuleColliderShapeDesc
+                                Length: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    1ce3c2df33a21b4be052729797dbfe4f: !MyGame.FPS_Controller,MyGame
+                        Id: 75104851-cba0-414c-929d-00d245faaa7f
+                        characterController: ref!! bce504b4-2bbb-4bc7-8528-9d29ef8f3e10
+                        camera: ref!! 90733fce-f01b-41c3-b1ca-ad492055a089
+                        MouseSpeed: 70.0
+                        MaxLookUpAngle: -70.0
+                        MaxLookDownAngle: 70.0
+                        Jump_Velocity: 4.0
+                        Speed: 3.0
+                        StandHeight: 1.5
+                        CrouchHeight: 0.5
+        -   Folder: null
+            Entity:
+                Id: 1edb856e-9023-416b-be01-7b55eb80c013
+                Name: Cube
+                Components:
+                    02cf1ff4ee42dc0affcf46bd85e47c0c: !TransformComponent
+                        Id: 863091fc-2225-49e8-98cb-65cd6165fef8
+                        Position: {X: -1.5076467, Y: 0.57335997, Z: 6.008987}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e3f8f721992273154e0637e45ff34280: !ModelComponent
+                        Id: 8c0810ff-a57e-4716-8946-3408832310df
+                        Model: 8157d86e-98e5-4975-97e8-c581c901c989:Cube
+                        Materials: {}
+                    3b1624d18bd6db0d1afe1c45e56f3ceb: !RigidbodyComponent
+                        Id: 03b96979-94be-4e22-a150-78c8273450f8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            1584a0436051ee49ea0e9d73a335de3f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 3082bf08-dbe4-41cf-9b6b-ae2959cbff3b
+                Name: Gun_animations
+                Components:
+                    d7e6917788f13dbc062055a68411343a: !TransformComponent
+                        Id: c6b05959-690b-43f6-9324-2b178efee7a2
+                        Position: {X: 0.0, Y: -0.32305628, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 0.2, Y: 0.2, Z: 0.2}
+                        Children: {}
+                    14e93e0298fa379590ef719b24f8b410: !AnimationComponent
+                        Id: 136776c9-8cd2-47e9-a0d8-aa0fb12c92d7
+                        Animations:
+                            7c288e1a67bdcc7d34e586a7133209cf~Shoot: 17b7c2c2-f205-4116-a335-c49650e9f908:Stuff/Shoot
+                    5f1ecadd2b9132ea200a14da6161b5ec: !ModelComponent
+                        Id: 48552f52-f12d-416b-864e-33bdcd0b4639
+                        Model: 25d93ca4-6a53-407c-90e3-6db7a65f93ae:Stuff/Pistol
+                        Materials: {}
+        -   Entity:
+                Id: 3350aabf-6639-4bca-b138-c4c7ea2eae76
+                Name: Ground
+                Components:
+                    6eb0b33a91e197c53f46f8ffa3abdec5: !TransformComponent
+                        Id: b0a211a4-3db1-490f-bc0e-696a07b606c0
+                        Position: {X: 0.0, Y: -24.964285, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    42fb92fedb6dc755a3ac02c7911fd823: !ModelComponent
+                        Id: c35b77ef-0ca2-4a64-b2c6-1a7dc6070bfd
+                        Model: ebff45b8-a799-42eb-a3a9-f4506b902b7b:Ground
+                        Materials: {}
+                    53fac319a69089e8829c1e8c51da583c: !StaticColliderComponent
+                        Id: 22338a7a-c9c4-469f-a951-8868259fd4ae
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            e2b4812495f1c4cc4b9d16a6f3efda8b: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 50.0, Y: 50.0, Z: 50.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 3aa60f27-7469-4f96-bfef-a862151b720c
+                Name: ENVIR
+                Components:
+                    588f30dc89d4d884c51480c80bd7bd0e: !TransformComponent
+                        Id: 604e4edd-78de-4817-84e3-2fd018316a2a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d768720e0852629d6bd2811efbe06231: ref!! 83b80e88-f6dd-438c-a61c-de1da4784f98
+                            406230c83e189ed8d7de2fefa2b6e5c1: ref!! b8b7bd7c-648f-4162-8a20-2c93b6937d10
+                            1c60b4ea17cf219c210f57d09c9f247b: ref!! da791b38-ae01-4980-ab7f-52d46042e649
+                            ef63647b1a99ee6c2009aa11218ecd04: ref!! 963393e2-2513-44e8-aced-290fe3f53662
+                            506350eff517421e966d6c404c855884: ref!! b0a211a4-3db1-490f-bc0e-696a07b606c0
+                            f260d94e1cd36b9262af070aff1cec92: ref!! 7ccd0eec-1238-4592-8860-056bc3ea0045
+                            b7e9285c90536509fbe8215542b0362f: ref!! 475d9a47-8dd8-4dba-984e-a63d3ab54e63
+        -   Entity:
+                Id: 468595bd-ad24-4f43-9af0-f7006cad76ca
+                Name: Entity
+                Components:
+                    cdc4cd5374b77fa8fcf3ebd8e2db1d43: !TransformComponent
+                        Id: a78fda52-cbb5-4995-8d3c-90c6b697d62c
+                        Position: {X: 0.0, Y: 0.50022, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2b4215b022975394a6286a034277ec19: !StaticColliderComponent
+                        Id: 64bc7143-d125-4608-89a4-8a965861ffe5
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a21b8120da2b2e552fbcf701c50f4113: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 47705c9f-7139-47ea-a42a-ee7e0b50da26
+                Name: Entity
+                Components:
+                    313c27526fc84bdf437a87872e6992a9: !TransformComponent
+                        Id: 357f790c-6436-497e-8025-6a6623038592
+                        Position: {X: -1.8895248, Y: 0.11518875, Z: 0.5245723}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ba553e318cb3df48c9ebb47a24921600: ref!! c278b9ae-aeb9-4b8a-a046-f8a54fee9d16
+        -   Entity:
+                Id: 4ff4cd82-9648-45cb-944f-813ca848ff5c
+                Name: Sphere
+                Components:
+                    dfd2e0411005dbb646378ac0f3da9cca: !TransformComponent
+                        Id: 83b80e88-f6dd-438c-a61c-de1da4784f98
+                        Position: {X: -8.903885, Y: -0.06599289, Z: 6.077834}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c042c5558bdfcae2a63891803a221f61: !ModelComponent
+                        Id: 1474858b-ea66-48fc-9922-e641af838e2e
+                        Model: e531fc5f-78fc-48aa-b983-62278d53e1af:Sphere
+                        Materials: {}
+                    465877fa522e45d15e83f9b0858ffe40: !StaticColliderComponent
+                        Id: 183795c1-87e4-4aa3-97d0-71dea9989124
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            7ffd919e21fd6d8bf8df3803a5503faa: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: 554990c1-6c78-46f3-828d-dc3f591ce209
+                Name: Head
+                Components:
+                    f9a1887ee061104fd0cc3fefb4882a5d: !TransformComponent
+                        Id: 5e1adced-5ddc-4c03-9f9d-1eedd95532a4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            672ebebb7646d5d27785791dc6958e2a: ref!! cefc3306-2bd1-4dfe-a7f6-0c08763e2bee
+        -   Entity:
+                Id: 5b7afaaf-efa0-40bb-b1b4-c4cf23635aab
+                Name: Sway
+                Components:
+                    59d37f5fa6172efbb2519699e2a9a5b8: !TransformComponent
+                        Id: a3736802-f16d-41f4-aa0e-b7de218549cc
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            90ca75e2e4f0f7ae22781d2f8670fa2d: ref!! ce0fd479-0ad8-4b9e-8f4e-6a1b89cf345a
+                    0861ac9a2fa6fec83c5fba34ba862221: !MyGame.Weapon_sway,MyGame
+                        Id: 1c66076d-5e30-4af4-a817-f5ee4dbe1d22
+                        amount: 0.1
+                        maxAmount: 0.3
+                        smoothAmount: 6.0
+        -   Folder: null
+            Entity:
+                Id: 60a1d2c3-7a53-4cd0-b5c1-5709e03c5ee6
+                Name: Enemy
+                Components:
+                    313c27526fc84bdf437a87872e6992a9: !TransformComponent
+                        Id: 62a8b84e-3c62-4207-82d8-a5f751c7f27c
+                        Position: {X: -8.893299, Y: 0.5458681, Z: 3.346125}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1659f7318ea1fe672c824048747024c7: !MyGame.Enemy,MyGame
+                        Id: e15509a3-344d-4894-8ec2-55c22db8f3a1
+                        HP: 100.0
+                        Need_to_Delete: ref!! 60a1d2c3-7a53-4cd0-b5c1-5709e03c5ee6
+                    518ebdf45bc5cbef571020c12a1866bc: !StaticColliderComponent
+                        Id: e14b9a01-3a13-4712-aebf-bbdf629f12fc
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            f480a2f20f642f658033bfb6e691e7d7: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    8f800d1e3be1955d26f9af8beb3aa85e: !ModelComponent
+                        Id: 7ebd7a30-a826-4fd7-82bf-4e3f28e76c5c
+                        Model: 8157d86e-98e5-4975-97e8-c581c901c989:Cube
+                        Materials:
+                            e1af5b56b5b0bbcfcc73a6d7ec686612~0: 10264371-9be8-4123-a603-7e3085c2be20:Sphere Material
+        -   Entity:
+                Id: 61ee4737-f25d-450f-b640-14ca6f367640
+                Name: STuff
+                Components:
+                    ac0e9d85f84ad696435c13711396ed47: !TransformComponent
+                        Id: 84908177-b7da-460b-bafc-45921bb017ab
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            6eff1c12b0b9a0b2d8eadfee4e18ca04: ref!! 357f790c-6436-497e-8025-6a6623038592
+                            9eb971c4e5bf68cd16d1145f6dc2993e: ref!! 62a8b84e-3c62-4207-82d8-a5f751c7f27c
+                            e808f0ef2db2cb0affef6799694f05a1: ref!! e77a8090-5d26-4479-91d4-dfe5d4d003d0
+                            6ff6360a125a4b87cf57531c88adeb3b: ref!! d235110f-90ef-40c8-9eeb-df7da4dfeb63
+        -   Entity:
+                Id: 64100103-0a6c-4560-aa07-5fefd801123a
+                Name: Cube
+                Components:
+                    02cf1ff4ee42dc0affcf46bd85e47c0c: !TransformComponent
+                        Id: 1f625328-81d6-4a14-8a04-6e99d1c19b63
+                        Position: {X: 0.0, Y: 0.57335997, Z: 6.008987}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e3f8f721992273154e0637e45ff34280: !ModelComponent
+                        Id: ed989558-f857-49ea-b487-f7feb935a60b
+                        Model: 8157d86e-98e5-4975-97e8-c581c901c989:Cube
+                        Materials: {}
+                    3b1624d18bd6db0d1afe1c45e56f3ceb: !RigidbodyComponent
+                        Id: ced4380d-e563-401c-b58e-d0452db2db2d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            1584a0436051ee49ea0e9d73a335de3f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 6cd8ca3f-d6d6-4f35-99d5-bf13f410cc08
+                Name: Cube
+                Components:
+                    02cf1ff4ee42dc0affcf46bd85e47c0c: !TransformComponent
+                        Id: 62ec8ea2-7f26-44a9-8875-122c01ce03f3
+                        Position: {X: 1.459792, Y: 0.57335997, Z: 6.008987}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e3f8f721992273154e0637e45ff34280: !ModelComponent
+                        Id: 17aa3d64-a63e-4f99-9ed9-4d92adf0c956
+                        Model: 8157d86e-98e5-4975-97e8-c581c901c989:Cube
+                        Materials: {}
+                    3b1624d18bd6db0d1afe1c45e56f3ceb: !RigidbodyComponent
+                        Id: 152bd3cb-94bb-4d26-b8d2-0bb3c236e467
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            1584a0436051ee49ea0e9d73a335de3f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 71bb9241-502a-4ba0-9d48-b53b200e7d4e
+                Name: Rigid body
+                Components:
+                    9f95263d3f8f25ce330fcd99600dbdef: !TransformComponent
+                        Id: 70975030-b51d-4f65-84dd-288b3d5db6ee
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1b9a0667fe3e482a6d1be9da0d02ea39: ref!! 1f625328-81d6-4a14-8a04-6e99d1c19b63
+                            ccfc2c76c39368aaa0a4a6a6fb166dbf: ref!! 62ec8ea2-7f26-44a9-8875-122c01ce03f3
+                            7055f0d2978867b21c8a837117a689cd: ref!! 863091fc-2225-49e8-98cb-65cd6165fef8
+        -   Folder: null
+            Entity:
+                Id: 7a4b6742-4388-49c2-a2ac-a372c705e31e
+                Name: Sphere
+                Components:
+                    dfd2e0411005dbb646378ac0f3da9cca: !TransformComponent
+                        Id: 963393e2-2513-44e8-aced-290fe3f53662
+                        Position: {X: -3.436741, Y: -0.06599289, Z: 6.077834}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c042c5558bdfcae2a63891803a221f61: !ModelComponent
+                        Id: 67875cc1-5fa6-4b9a-8757-4d083bc92f35
+                        Model: e531fc5f-78fc-48aa-b983-62278d53e1af:Sphere
+                        Materials: {}
+                    465877fa522e45d15e83f9b0858ffe40: !StaticColliderComponent
+                        Id: 70c390a8-950c-4c02-9f38-aef0f2f86218
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            7ffd919e21fd6d8bf8df3803a5503faa: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: 7dad2caf-b8ed-4966-b845-28f688696ffd
+                Name: box
+                Components:
+                    ecb1b3baaf59d30162b2369bd5f5b8f3: !TransformComponent
+                        Id: c278b9ae-aeb9-4b8a-a046-f8a54fee9d16
+                        Position: {X: 4.816906, Y: 1.0656297, Z: 5.5093017}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2f3fab9b9943460375de1b12dfb43753: ref!! a78fda52-cbb5-4995-8d3c-90c6b697d62c
+                    18cb43ae02f2126c5dffdad475c68d9b: !ModelComponent
+                        Id: e754e342-2fa9-49e9-b1e4-29f00444a920
+                        Model: efeb72e3-bc54-454f-8c0f-e6bf359fe4bb:box
+                        Materials: {}
+        -   Folder: null
+            Entity:
+                Id: a523b736-9dd8-4fa1-a81d-cb003105a421
+                Name: Sphere
+                Components:
+                    dfd2e0411005dbb646378ac0f3da9cca: !TransformComponent
+                        Id: b8b7bd7c-648f-4162-8a20-2c93b6937d10
+                        Position: {X: -7.133111, Y: -0.06599289, Z: 6.077834}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c042c5558bdfcae2a63891803a221f61: !ModelComponent
+                        Id: 03ca6cc3-7d54-4e1f-a9df-35487115a356
+                        Model: e531fc5f-78fc-48aa-b983-62278d53e1af:Sphere
+                        Materials: {}
+                    465877fa522e45d15e83f9b0858ffe40: !StaticColliderComponent
+                        Id: da6824cd-d228-41d4-bc92-c231e0efcb96
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            7ffd919e21fd6d8bf8df3803a5503faa: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: a632ff71-30da-415e-8c44-a58112243157
+                Name: Skybox
+                Components:
+                    5ed56df307e9feca84f3bedacdb281f6: !TransformComponent
+                        Id: 7ccd0eec-1238-4592-8860-056bc3ea0045
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    fee6e7d136fbc44cf573b3495e6aee11: !BackgroundComponent
+                        Id: 731edb9d-5850-4685-85bc-80765bc2af43
+                        Texture: 0e35f72c-9575-48dc-8e81-848eb64591e8:Skybox texture
+                    1d38a451d187e01b3dede9c14914f35f: !LightComponent
+                        Id: 1c68d90a-c835-4fe6-8fd7-affe8e414290
+                        Type: !LightSkybox
+                            Skybox: 28f675ad-69db-49ad-ab3e-f486df466a73:Skybox
+        -   Folder: null
+            Entity:
+                Id: afcc1be2-3eae-44f3-9065-b0bc0aed9a02
+                Name: Enemy
+                Components:
+                    313c27526fc84bdf437a87872e6992a9: !TransformComponent
+                        Id: d235110f-90ef-40c8-9eeb-df7da4dfeb63
+                        Position: {X: -8.893299, Y: 0.5458681, Z: -0.1955694}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1659f7318ea1fe672c824048747024c7: !MyGame.Enemy,MyGame
+                        Id: 18e29001-fe52-4838-ba93-0248e0c71b45
+                        HP: 100.0
+                        Need_to_Delete: ref!! afcc1be2-3eae-44f3-9065-b0bc0aed9a02
+                    518ebdf45bc5cbef571020c12a1866bc: !StaticColliderComponent
+                        Id: c7e46bbe-b9c2-494f-8925-b0165723edb1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            f480a2f20f642f658033bfb6e691e7d7: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    8f800d1e3be1955d26f9af8beb3aa85e: !ModelComponent
+                        Id: 03975a2c-7040-447d-b1e8-13f83f9ebdc8
+                        Model: 8157d86e-98e5-4975-97e8-c581c901c989:Cube
+                        Materials:
+                            e1af5b56b5b0bbcfcc73a6d7ec686612~0: 10264371-9be8-4123-a603-7e3085c2be20:Sphere Material
+        -   Folder: null
+            Entity:
+                Id: b1260ab6-7e59-4c33-b910-409195688ada
+                Name: Sphere
+                Components:
+                    dfd2e0411005dbb646378ac0f3da9cca: !TransformComponent
+                        Id: da791b38-ae01-4980-ab7f-52d46042e649
+                        Position: {X: -5.252595, Y: -0.06599289, Z: 6.077834}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c042c5558bdfcae2a63891803a221f61: !ModelComponent
+                        Id: 1d7a134d-eee0-4428-bcfb-a7952f7bff52
+                        Model: e531fc5f-78fc-48aa-b983-62278d53e1af:Sphere
+                        Materials: {}
+                    465877fa522e45d15e83f9b0858ffe40: !StaticColliderComponent
+                        Id: 980f21a5-e233-4bed-a613-d43f1bf5fe44
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            7ffd919e21fd6d8bf8df3803a5503faa: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: c0f7cb31-1854-4fe7-8165-f1d2a3ce5a95
+                Name: Gun_
+                Components:
+                    d5ce66b20c24ddce866bccd1399c21fd: !TransformComponent
+                        Id: ce0fd479-0ad8-4b9e-8f4e-6a1b89cf345a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            cdfb09ce84c1cde126eef20900169fdc: ref!! c6b05959-690b-43f6-9324-2b178efee7a2
+                    33b884e20a282d6683a3e87765022303: !MyGame.Gun_Weapon,MyGame
+                        Id: 153187a4-fad8-476a-94c0-9265e1fe347f
+                        BulletHolePrefab: d3aaa24f-66bb-4872-9c42-9fab72dd81ad:Decal/Prefab
+                        animation_Speed: 1.0
+                        Anim_Gun: ref!! 3082bf08-dbe4-41cf-9b6b-ae2959cbff3b
+                        Damage_amount: 10.0
+        -   Entity:
+                Id: c44f679b-eb68-40cb-86f6-09cda022a043
+                Name: Directional light
+                Components:
+                    929948721ea819496c93859c774a0e2c: !TransformComponent
+                        Id: 475d9a47-8dd8-4dba-984e-a63d3ab54e63
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.25881904, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    329affa5c15adb0744b60dd638ef5a6e: !LightComponent
+                        Id: 44eb9e44-a081-4af9-9e64-d0c8f688142d
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: c95d41ef-bd72-4226-8266-59524623b307
+                Name: Camera
+                Components:
+                    2b9d5b33d6f2f9cb1cfa112a14147e15: !TransformComponent
+                        Id: cefc3306-2bd1-4dfe-a7f6-0c08763e2bee
+                        Position: {X: 8.773729E-08, Y: 0.34906986, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            14082f134136563adefa9dc583bac6bc: ref!! a3736802-f16d-41f4-aa0e-b7de218549cc
+                    bc1bcaabf75edc942bc220b43d3ee96e: !CameraComponent
+                        Id: 90733fce-f01b-41c3-b1ca-ad492055a089
+                        Name: null
+                        Projection: Perspective
+                        VerticalFieldOfView: 70.0
+                        NearClipPlane: 0.01
+                        Slot: ba7e4e75-429a-4170-bfcf-26c4a0d39441
+        -   Folder: null
+            Entity:
+                Id: f272ee0b-4b64-42fd-ba94-ed785c7b9089
+                Name: Enemy
+                Components:
+                    313c27526fc84bdf437a87872e6992a9: !TransformComponent
+                        Id: e77a8090-5d26-4479-91d4-dfe5d4d003d0
+                        Position: {X: -8.893299, Y: 0.5458681, Z: 1.449386}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1659f7318ea1fe672c824048747024c7: !MyGame.Enemy,MyGame
+                        Id: 411ffd0b-8523-4ff3-917e-a713f76b7ec4
+                        HP: 100.0
+                        Need_to_Delete: ref!! f272ee0b-4b64-42fd-ba94-ed785c7b9089
+                    518ebdf45bc5cbef571020c12a1866bc: !StaticColliderComponent
+                        Id: d1c33e5a-3c8b-4ce7-9085-d03ef14a6aa1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            f480a2f20f642f658033bfb6e691e7d7: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    8f800d1e3be1955d26f9af8beb3aa85e: !ModelComponent
+                        Id: 7de25864-c7a0-4e3b-8a67-007190dbaca6
+                        Model: 8157d86e-98e5-4975-97e8-c581c901c989:Cube
+                        Materials:
+                            e1af5b56b5b0bbcfcc73a6d7ec686612~0: 10264371-9be8-4123-a603-7e3085c2be20:Sphere Material
